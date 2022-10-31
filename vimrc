@@ -19,12 +19,6 @@ set number
 set nohls
 inoremap ^q <Esc>
 
-let @i="I  j"
-let @u="0xxj"
-
 set path+=**
 set wildmenu
 set noswapfile
-
-
-command! MakeTags !ctags -R . --languages=SystemVerilog
