@@ -1,24 +1,31 @@
-syntax on	
+syntax on
 set background=dark
+set colorcolumn=80
 set showcmd
-set clipboard=unnamedplus
+set scrolloff=8
 
 filetype plugin on
-set tabstop=4
+set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
-set smartindent
-set cinw=if,else,while,do,for,switch,begin,case
 set nowrap
 
 set splitright
 set splitbelow
 set number
+set rnu
 set nohls
-inoremap ^q <Esc>
+set incsearch
 
 set path+=**
 set wildmenu
 set noswapfile
+
+set listchars=tab:‣~,trail:⁃,nbsp:◦
+"set listchars+=space:·
+set list
+
+command! TrimWhiteSpaces %s/\s\+\(\n\)/\1/g
+
