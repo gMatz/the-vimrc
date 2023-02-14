@@ -27,11 +27,11 @@ set listchars=tab:‣~,trail:⁃,nbsp:◦
 "set listchars+=space:·
 set list
 
- set cursorline                                                                  
- hi CursorLine cterm=bold ctermbg=238                                            
- hi CursorLineNr cterm=bold ctermbg=242                                          
+ set cursorline
+ hi CursorLine cterm=bold ctermbg=238
+ hi CursorLineNr cterm=bold ctermbg=242
                                                                                  
- hi ColorColumn ctermbg=240    
+ hi ColorColumn ctermbg=240
 
 command! TrimWhiteSpaces %s/\s\+\(\n\)/\1/g
 
